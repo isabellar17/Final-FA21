@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #2a2a2a;
+}
+
+/* the styles for the elements */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    background-color: white;
+    width: 80%;
+}
+
+section {
+    width: 80%;
+    margin: 2% auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    width: 80%;
+    margin: 2% auto;
+}
+
+table {
+    margin: auto auto;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+}
+
+header img {
+    width: 100%;
+}
+
+
+/* the styles for the navigation */
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+    width: 14%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.bb {
+    color: #fe0000;
+}
+
+.mtc {
+    color: #014eff;
+}
+
+.fp {
+    color: #ffc801;
+}
+
+.mtr {
+    color: #aeaeae;
+}
+
+.bat {
+    color: #6c4095;
+}
+
+.dh {
+    color: #f46900;
+}
+
+/* the styles for the table */
+table a img {
+    width: 26.5625em;
+}
+
+table a img:hover {
+    box-shadow: 10px 10px 40px 5px black;
+}
+
+td {
+    padding: 0 .5em;
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+label {
+    padding-left: 8%;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    #home {
+        width: 100%;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    body {
+        width: 95%;
+    }
+
+}
